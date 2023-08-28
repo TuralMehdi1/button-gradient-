@@ -1,0 +1,73 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTN GRADIENT</title>
+</head>
+
+<style>
+body{
+    background: #232323;
+
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.neon{
+    display: 
+    inline-block;
+    padding: 12px  40px;
+    background-image: linear-gradient(to right , 
+     rgb(018,194,233),rgb(196,113,237) , rgb(246 ,79,89));
+     cursor: pointer;
+     border-radius: 20px;
+     color: #fff;
+     text-transform: uppercase;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     font-weight: bold;
+     margin-left: 20px;
+     transition: 1s;
+}
+
+.neon:hover{
+    animation: glow 2s linear infinite;
+ 
+    padding: 9px 38px;
+}
+
+@keyframes glow{
+    0%{
+        box-shadow: 5px 5px  20px   rgb(93,52,168),-5px -5px  20px rgb(93, 52, 168);
+    }
+
+    50%{
+        box-shadow: 5px 5px  20px   rgb(81,224,210),-5px -5px  20px rgb(81,224,210);
+    }
+
+    100%{
+        box-shadow: 5px 5px  20px   rgb(93,52,168),-5px -5px  20px rgb(93,52,168);
+    }
+}
+</style>
+
+
+
+<body> 
+    <div class="container">
+         <button class="neon">Click</button>
+    </div>
+   
+
+
+
+
+</body>
+</html>
